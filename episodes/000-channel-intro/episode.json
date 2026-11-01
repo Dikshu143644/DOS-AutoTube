@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "title": "Welcome to DOS AI Explained: AI, Made Simple",
+    "description": "AI is changing everything - but almost nobody explains it simply. DOS AI Explained turns big AI ideas into clear, useful, fact-checked videos for curious beginners, students, creators and professionals.\n\nWhat we cover:\n- AI tools, reviewed honestly\n- How AI actually works, from chatbots to agents\n- Tech news, explained\n- Practical how-tos to put AI to work\n\nNew Shorts every day and a deep-dive video every week. First deep dive: How AI Agents Actually Work.\n\nSubscribe: https://www.youtube.com/@DOSAIExplained?sub_confirmation=1\n\nNarration uses an AI voice and the visuals are AI-generated 3D art and code-made graphics; research and script by DOS AI Explained.\n\n#AIExplained #ArtificialIntelligence #DOSAIExplained",
+    "tags": [
+      "dos ai explained",
+      "ai explained",
+      "ai explained simply",
+      "artificial intelligence",
+      "ai for beginners",
+      "ai tools",
+      "ai news",
+      "tech explained",
+      "how ai works",
+      "ai agents",
+      "learn ai",
+      "ai tutorial",
+      "machine learning",
+      "chatgpt",
+      "channel trailer"
+    ],
+    "category": "Science & Technology",
+    "language": "English",
+    "audience": "not made for kids",
+    "altered_content": true,
+    "visibility": "private",
+    "file": "01_channel_intro_1080p.mp4"
+  },
+  "script": [
+    [
+      "AI is changing everything. But almost nobody explains it simply.",
+      {
+        "img": "future",
+        "kb": "in"
+      }
+    ],
+    [
+      "STING",
+      null
+    ],
+    [
+      "Welcome to DOS AI Explained.",
+      {
+        "card": "i_welcome"
+      }
+    ],
+    [
+      "This is the channel where big AI ideas become simple, clear, and actually useful.",
+      {
+        "img": "brain",
+        "kb": "out"
+      }
+    ],
+    [
+      "It's for curious beginners, students, creators and professionals, in the US, the UK, and everywhere else.",
+      {
+        "img": "audience",
+        "kb": "in"
+      }
+    ],
+    [
+      "Every video is researched, fact-checked and sourced, so you can trust what you learn.",
+      {
+        "card": "i_trust"
+      }
+    ],
+    [
+      "Here's what we'll cover.",
+      {
+        "card": "i_cover0"
+      }
+    ],
+    [
+      "AI tools, reviewed honestly, so you know what's worth your time.",
+      {
+        "img": "review",
+        "kb": "right"
+      }
+    ],
+    [
+      "How AI actually works, from chatbots to agents, without the jargon.",
+      {
+        "img": "loop",
+        "kb": "in"
+      }
+    ],
+    [
+      "Tech news, explained, so you know what changed and why it matters.",
+      {
+        "img": "news",
+        "kb": "out"
+      }
+    ],
+    [
+      "And practical how-tos, to put AI to work in your job and your life.",
+      {
+        "img": "howto",
+        "kb": "left"
+      }
+    ],
+    [
+      "New Shorts every day, and a deep-dive video every week.",
+      {
+        "card": "i_schedule"
+      }
+    ],
+    [
+      "Hit subscribe so you don't miss the first deep dive: How AI Agents Actually Work.",
+      {
+        "card": "i_sub"
+      }
+    ],
+    [
+      "This is DOS AI Explained. AI, made simple.",
+      {
+        "card": "i_end"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,39 @@
+# DOS-AutoTube publishing plan for DOS AI Explained (@DOSAIExplained)
+# Times are US Eastern (America/New_York) — peak for US viewers, still evening for the UK.
+timezone: America/New_York
+
+channel:
+  handle: "@DOSAIExplained"
+  language: en
+  category_id: 28          # Science & Technology
+  made_for_kids: false
+  synthetic_media_disclosure: true   # AI voice + AI visuals, always disclosed
+
+shorts:
+  cadence: daily
+  publish_at: "12:00"      # 12 PM ET = 5 PM UK = 9:30 PM IST
+  build_lead_hours: 6      # build + review window before publishing
+  length_seconds: [30, 50]
+
+long_videos:
+  cadence: [tuesday, thursday, saturday]   # 2-3 per week; Saturday optional
+  publish_at: "09:00"      # 9 AM ET = 2 PM UK = 7:30 PM IST
+  build_lead_hours: 24
+  length_minutes: [6, 10]
+
+quality_gate:
+  # YouTube's "inauthentic / mass-produced content" policy: every video must add real value.
+  min_sources: 2
+  fact_check: required        # every number on screen must be spoken and sourced
+  human_approval: required    # new formats & the first videos are approved by Omkar before going public
+  max_reuse_of_visuals: 0.3   # at most 30% of shots reused from earlier videos
+  upload_as: private_scheduled  # uploaded private with publishAt; goes public only on schedule
+
+topics:
+  regions: [US, GB]
+  pillars:
+    - "AI tools, reviewed honestly"
+    - "How AI actually works"
+    - "Tech news, explained"
+    - "Practical AI how-tos"
+  avoid_repeats_days: 30

@@ -1,0 +1,452 @@
+{
+  "chapters": [
+    [
+      "Intro",
+      0.0
+    ],
+    [
+      "Chatbot vs. agent",
+      26.298163
+    ],
+    [
+      "The 4 building blocks",
+      71.14510200000001
+    ],
+    [
+      "The agent loop",
+      131.639388
+    ],
+    [
+      "Workflows vs. agents",
+      206.55326599999998
+    ],
+    [
+      "Where agents still fail",
+      262.032042
+    ],
+    [
+      "Recap",
+      322.34347099999997
+    ]
+  ],
+  "script": [
+    {
+      "id": "hook",
+      "chapter": "Intro",
+      "beats": [
+        [
+          "You ask a chatbot to plan a trip, and it gives you a nice list.",
+          {
+            "img": "chatbot"
+          }
+        ],
+        [
+          "You ask an AI agent, and it actually goes and checks the flights, compares the prices, and puts the booking on your calendar.",
+          {
+            "img": "agent"
+          }
+        ],
+        [
+          "Same kind of AI underneath. So what's the difference?",
+          {
+            "card": "q_diff"
+          }
+        ],
+        [
+          "By the end of this video, you'll understand exactly how AI agents work. No jargon, no hype. Let's get into it.",
+          {
+            "card": "title"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "vs",
+      "chapter": "Chatbot vs. agent",
+      "beats": [
+        [
+          "Let's start with the thing you already know: a chatbot. You type a message, the model reads it, and it writes back.",
+          {
+            "img": "chatbot",
+            "kb": "in"
+          }
+        ],
+        [
+          "One question, one answer. Then it stops and waits for you.",
+          {
+            "card": "chatbot_def"
+          }
+        ],
+        [
+          "An agent is different in one important way: it doesn't stop after one answer.",
+          {
+            "img": "agent",
+            "kb": "out"
+          }
+        ],
+        [
+          "You give it a goal, and it keeps working. Taking steps, checking results, and deciding what to do next, until the goal is done, or until it needs your help.",
+          {
+            "card": "agent_def"
+          }
+        ],
+        [
+          "Anthropic, the company behind Claude, defines agents as systems where LLMs, large language models, dynamically direct their own processes and tool usage.",
+          {
+            "card": "quote_anthropic"
+          }
+        ],
+        [
+          "In plain English: the AI decides the steps, not a fixed script.",
+          {
+            "img": "paths",
+            "kb": "in"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "parts",
+      "chapter": "The 4 building blocks",
+      "beats": [
+        [
+          "Almost every AI agent is built from the same four parts.",
+          {
+            "card": "parts0"
+          }
+        ],
+        [
+          "One: the brain. That's a large language model, like GPT, Gemini or Claude. It reads the situation and decides what to do next.",
+          {
+            "img": "brain"
+          }
+        ],
+        [
+          "Two: tools. On its own, a language model can only produce text. Tools give it hands: a web search, a calculator, a calendar, a code runner, a browser.",
+          {
+            "img": "tools"
+          }
+        ],
+        [
+          "The model doesn't press the buttons itself. It writes a short, structured request, like: search the web for flights from London to New York on Friday.",
+          {
+            "card": "toolcall"
+          }
+        ],
+        [
+          "And the software around it runs that tool and hands back the result.",
+          {
+            "card": "toolcall2"
+          }
+        ],
+        [
+          "Three: memory. Agents keep track of what's happened so far: the goal, the steps they've taken, and what they've learned.",
+          {
+            "img": "memory"
+          }
+        ],
+        [
+          "Short-term memory is the running conversation. Long-term memory can be notes or a database the agent can search later.",
+          {
+            "card": "memory_def"
+          }
+        ],
+        [
+          "And four: the loop. This is the part that turns a chatbot into an agent.",
+          {
+            "img": "loop",
+            "kb": "in"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "loop",
+      "chapter": "The agent loop",
+      "beats": [
+        [
+          "The loop is simple: think, act, observe, repeat.",
+          {
+            "card": "loop0"
+          }
+        ],
+        [
+          "This idea was popularised by a 2022 research paper called ReAct, short for reasoning and acting, from researchers at Princeton and Google.",
+          {
+            "img": "paper"
+          }
+        ],
+        [
+          "They showed that letting a model alternate between reasoning about a problem and taking actions works better than doing either one alone.",
+          {
+            "card": "react"
+          }
+        ],
+        [
+          "Let's watch it run. Say your goal is: find a highly rated ramen place open after 10 p.m. near me, and send the details to my friend.",
+          {
+            "img": "ramen"
+          }
+        ],
+        [
+          "Think: the agent reasons, first I need ramen places nearby that are open late.",
+          {
+            "card": "loop_think"
+          }
+        ],
+        [
+          "Act: it calls the search tool.",
+          {
+            "card": "loop_act"
+          }
+        ],
+        [
+          "Observe: it reads the results. Five places. Two close at nine.",
+          {
+            "img": "citymap"
+          }
+        ],
+        [
+          "Think again: three options left. I should check the ratings.",
+          {
+            "card": "loop_think2"
+          }
+        ],
+        [
+          "Act: another search. Observe: one has four point seven stars.",
+          {
+            "card": "loop_observe2"
+          }
+        ],
+        [
+          "Think: good, now send it. Act: it calls the messaging tool. Observe: message sent.",
+          {
+            "img": "phone"
+          }
+        ],
+        [
+          "Goal complete. The loop ends.",
+          {
+            "card": "loop_done"
+          }
+        ],
+        [
+          "Notice that nobody wrote those steps in advance. The model chose each step based on what it had just seen.",
+          {
+            "img": "paths",
+            "kb": "out"
+          }
+        ],
+        [
+          "That's the whole trick, and it's why agents can handle messy, real-world tasks.",
+          {
+            "img": "loop",
+            "kb": "out"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "wf",
+      "chapter": "Workflows vs. agents",
+      "beats": [
+        [
+          "Now, not everything called an agent really is one.",
+          {
+            "card": "notall"
+          }
+        ],
+        [
+          "Many AI products are actually workflows: the steps are fixed in code, and the AI fills in one part, like: summarise this email, then file it.",
+          {
+            "img": "rails"
+          }
+        ],
+        [
+          "That's predictable, cheap, and often exactly what you want.",
+          {
+            "card": "wf_vs_agent1"
+          }
+        ],
+        [
+          "For example, a support workflow might always do the same three steps: read the ticket, look up the order, draft a reply. An agent given the same ticket might decide it first needs to check the delivery status, or ask the customer a question.",
+          {
+            "img": "rails",
+            "kb": "out"
+          }
+        ],
+        [
+          "A true agent chooses its own path. That makes it more flexible, but also slower, more expensive, and harder to predict.",
+          {
+            "card": "wf_vs_agent2"
+          }
+        ],
+        [
+          "Anthropic's own advice to developers is to start with the simplest solution, and only add agent-like freedom when the task really needs it.",
+          {
+            "img": "paths",
+            "kb": "in2"
+          }
+        ],
+        [
+          "That's a useful rule for you too, when you're judging a new AI tool.",
+          {
+            "card": "rule"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "fail",
+      "chapter": "Where agents still fail",
+      "beats": [
+        [
+          "So why isn't everything an agent already? Because each loop is another chance to go wrong.",
+          {
+            "img": "glitch"
+          }
+        ],
+        [
+          "If the model misreads a result early, every later step builds on that mistake.",
+          {
+            "card": "risk1"
+          }
+        ],
+        [
+          "Agents can get stuck repeating the same action. Long tasks can burn through a lot of computing cost.",
+          {
+            "card": "risk2"
+          }
+        ],
+        [
+          "And there's a security risk called prompt injection: a web page or email can contain hidden instructions, and an agent that reads it might try to follow them.",
+          {
+            "img": "injection"
+          }
+        ],
+        [
+          "That's why good agents ask for confirmation before doing anything you can't undo, like paying, deleting or sending.",
+          {
+            "img": "confirm"
+          }
+        ],
+        [
+          "Even the analysts are cautious. Gartner predicts that over 40% of agentic AI projects will be cancelled by the end of 2027, because of rising costs, unclear value or weak risk controls.",
+          {
+            "card": "stat40"
+          }
+        ],
+        [
+          "At the same time, it expects at least 15% of day-to-day work decisions to be made autonomously by agentic AI by 2028, up from zero in 2024.",
+          {
+            "card": "stat15"
+          }
+        ],
+        [
+          "Big promise, real growing pains.",
+          {
+            "img": "chart"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "recap",
+      "chapter": "Recap",
+      "beats": [
+        [
+          "Let's recap. An AI agent is a language model with four parts: a brain that decides, tools that act, memory that keeps track,",
+          {
+            "card": "recap"
+          }
+        ],
+        [
+          "and a loop: think, act, observe, repeat, that keeps going until the goal is done.",
+          {
+            "card": "loop0b"
+          }
+        ],
+        [
+          "So next time a company says its product is agentic, ask two questions: does it choose its own steps, and does it check with you before it does something it can't undo?",
+          {
+            "card": "twoq"
+          }
+        ],
+        [
+          "If this made AI agents click for you, subscribe to DOS AI Explained. We break down one big AI idea, simply, every week. See you in the next one.",
+          {
+            "card": "endscreen"
+          }
+        ]
+      ]
+    }
+  ],
+  "short": [
+    [
+      "An AI agent isn't a smarter chatbot. It's a loop.",
+      {
+        "img": "v_loop"
+      }
+    ],
+    [
+      "A chatbot answers once, and stops.",
+      {
+        "img": "v_chatbot"
+      }
+    ],
+    [
+      "An agent gets a goal, then repeats three steps. Think: what should I do next?",
+      {
+        "card": "s_think"
+      }
+    ],
+    [
+      "Act: use a tool, like web search, a calendar, or a browser.",
+      {
+        "img": "v_tools"
+      }
+    ],
+    [
+      "Observe: read the result. Then it loops again, and again, until the job is done.",
+      {
+        "card": "s_observe"
+      }
+    ],
+    [
+      "Researchers call this pattern ReAct: reasoning plus acting.",
+      {
+        "card": "s_react"
+      }
+    ],
+    [
+      "That's how AI can research, book and code on its own.",
+      {
+        "img": "v_agent"
+      }
+    ],
+    [
+      "The full breakdown is on DOS AI Explained. Subscribe for more.",
+      {
+        "card": "s_cta"
+      }
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Anthropic, \"Building effective agents\" (2024)",
+      "url": "https://www.anthropic.com/research/building-effective-agents"
+    },
+    {
+      "name": "Yao et al., \"ReAct: Synergizing Reasoning and Acting in Language Models\" (Princeton & Google, 2022)",
+      "url": "https://arxiv.org/abs/2210.03629"
+    },
+    {
+      "name": "Gartner press release, 25 June 2025 (40% of agentic AI projects cancelled by end of 2027; 15% of decisions by 2028)",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027"
+    },
+    {
+      "name": "OWASP Top 10 for LLM Apps, LLM01 Prompt Injection",
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+    }
+  ]
+}
