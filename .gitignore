@@ -1,0 +1,10 @@
+.env
+.secrets/
+__pycache__/
+*.pyc
+.venv/
+episodes/*/work/
+episodes/*/*.mp4
+*.wav
+*.log
+.DS_Store
