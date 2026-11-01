@@ -1,0 +1,27 @@
+{
+  "title": "How AI Agents Actually Work (Explained Simply)",
+  "description": "What actually makes an AI \"agent\" different from a chatbot? In 6 minutes, no jargon: the 4 building blocks every agent shares (the brain, tools, memory and the loop), the think-act-observe loop from the ReAct paper, a step-by-step example, why many \"agents\" are really workflows, and where agents still fail (compounding mistakes, cost, prompt injection) - plus two questions to ask before you trust any \"agentic\" product.\n\nChapters\n0:00 Intro\n0:26 Chatbot vs. agent\n1:11 The 4 building blocks\n2:12 The agent loop\n3:27 Workflows vs. agents\n4:22 Where agents still fail\n5:22 Recap\n\nSources\n- Anthropic, \"Building effective agents\" (2024): https://www.anthropic.com/research/building-effective-agents\n- Yao et al., \"ReAct: Synergizing Reasoning and Acting in Language Models\" (Princeton & Google, 2022): https://arxiv.org/abs/2210.03629\n- Gartner press release, 25 June 2025 (40% of agentic AI projects cancelled by end of 2027; 15% of decisions by 2028): https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027\n- OWASP Top 10 for LLM Apps, LLM01 Prompt Injection: https://genai.owasp.org/llmrisk/llm01-prompt-injection/\n\nSubscribe for one big AI idea, explained simply, every week: https://www.youtube.com/@DOSAIExplained?sub_confirmation=1\nWatch the 38-second version: AI Agents Are Just a Loop (Shorts on the channel)\n\nNarration uses an AI voice and the visuals are AI-generated 3D art and code-made diagrams; the research, script and fact-checking are by DOS AI Explained.\n\n#AIAgents #ArtificialIntelligence #AIExplained",
+  "tags": [
+    "ai agents",
+    "how ai agents work",
+    "ai agents explained",
+    "what is an ai agent",
+    "agentic ai",
+    "ai explained simply",
+    "react prompting",
+    "llm agents",
+    "chatbot vs ai agent",
+    "ai for beginners",
+    "artificial intelligence",
+    "ai tools",
+    "prompt injection",
+    "ai workflows",
+    "dos ai explained"
+  ],
+  "category": "Science & Technology",
+  "language": "English",
+  "audience": "not made for kids",
+  "altered_content": true,
+  "visibility": "private",
+  "file": "02_how_ai_agents_work_master.mp4"
+}
